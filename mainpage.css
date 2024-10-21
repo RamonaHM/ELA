@@ -1,0 +1,206 @@
+*,
+::after,
+::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--scroll-padding, 12em);
+}
+
+/* header */
+
+header {
+    /* with the postion absolut i could solve the problem with the sticky header */
+    position: absolute;
+    width: 100%;
+}
+
+header div {
+    margin: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white 0.7;
+}
+
+.logo {
+    font-family: 'Barlow', sans-serif;
+    font-size: 3.5em;
+}
+
+header ul {
+    display: flex;
+    font-family: 'Cabin', sans-serif;
+    font-size: 0.9em;
+    font-weight: lighter;
+}
+
+header li {
+    margin: 0.5em 1.5em 0.5em 1.5em;
+}
+
+.navbar_hidden {
+    display: none;
+}
+
+.header-sticky {
+    position: fixed;
+    background-color: white;
+    z-index: 200;
+    width: 100%;
+    /* ??? */
+    transition: 0.9s;
+}
+
+.header-top {
+    /* with the postion absolut i could solve the problem with the sticky header */
+    position: absolute;
+    width: 100%;
+    z-index: 200;
+}
+
+
+
+/* main */
+
+/* Do we need this?
+main {
+    position: relative;
+} */
+
+h2 {
+    font-weight: bold;
+    font-size: 0.9em;
+    align-items: normal;
+    padding-bottom: 1em;
+    font-family: 'Cabin', sans-serif;
+    text-align: left;
+}
+
+.sec p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.sec {
+    align-items: center;
+    font-family: 'Barlow', sans-serif;
+}
+
+/* landing */
+
+.section1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.section1 .img {
+    position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+    background-image: url(https://images.unsplash.com/photo-1561913604-2a8c101ae3e8?q=80&w=1691&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+}
+
+.section1 .text_sec1 {
+    font-family: 'Cabin', sans-serif;
+    font-size: 1em;
+    padding: 8%;
+}
+
+/* service */
+
+.section2 {
+    background-color: white(210, 207, 207, 0.4);
+    margin: 2em 10% 2em 10%;
+    border: 0.05em dotted black;
+    padding: 4em 6%;
+}
+
+.img_sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_sec2 img {
+    object-fit: cover;
+    aspect-ratio: 2/1;
+    object-position: 50% 65%;
+    width: 80%;
+}
+
+/* about me */
+
+.section3 {
+    background-color: rgb(84,136,160, 0.4);
+}
+
+.wrapper_sec3 {
+    padding: 2em 10%;
+    display: flex;
+}
+
+.text_sec3 {
+    width: 150%;
+    padding-right: 3em;
+    padding-top: 2em;
+}
+
+.img_sec3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_sec3 img {
+    width: 100%;
+}
+
+/* contact */
+
+.section4 {
+    background-color: rgb(210, 207, 207, 0.4);
+    margin: 4em 10% 4em 10%;
+    padding: 3em 14% 4em;
+}
+
+.section4 p {
+    padding-bottom: 3em;
+}
+
+.section4 .contact_button{
+    padding: 0.7em;
+    border: 1px solid black;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    left: 50%;
+}
+
+.section4 .contact_button:hover{
+    background-color: rgb(210, 207, 207, 0.1);
+    padding: 0.6em;
+}
+
+.section4 .contact_button:active{
+    background-color: rgb(210, 207, 207, 0.7);
+    padding: 0.6em;
+}
+
+/* footer */
+
+.footer {
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer ul {
+    text-align: left;
+}
+
